@@ -1,1 +1,3 @@
-@include font_face('RobotoCondensed-Regular', 'RobotoCondensed', $font_path, 400);
+@include font_face('Montserrat-Regular', 'montserrat', $font_path, 400);
+@include font_face('Montserrat-SemiBold', 'montserrat', $font_path, 600);
+@include font_face('Gooper-Regular', 'Gooper', $font_path, 400);

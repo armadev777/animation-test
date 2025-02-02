@@ -1,7 +1,6 @@
+import gridAnimation from './components/grid-animation';
+
 import layout from './layout/layout';
-import { indexPage } from './pages';
-import { articlePage } from './pages/article';
-import { uiPage } from './pages/ui';
 import { documentReady, pageLoad } from './utils';
 
 const styles = ['color: #fff', 'background: #cf8e1f'].join(';');
@@ -16,10 +15,9 @@ window.NodeList.prototype.filter = Array.prototype.filter;
 const app = () => {
 	layout();
 	pageLoad(() => {
-		indexPage();
-		articlePage();
-		uiPage();
 		document.body.classList.add('body--loaded');
+
+		gridAnimation();
 	});
 };
 

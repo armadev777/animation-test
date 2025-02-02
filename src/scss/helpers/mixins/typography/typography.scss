@@ -4,8 +4,17 @@
 }
 
 @mixin h2 {
-	font-size: 5.6rem;
-	font-weight: 700;
+	font-weight: 600;
+	font-style: $font_2;
+	@include bp($point_2, min) {
+		font-size: 8.4rem;
+	}
+	@include bp($point_3, $point_4) {
+		font-size: 5rem;
+	}
+	@include bp($point_4 - 1) {
+		font-size: 4rem;
+	}
 }
 
 @mixin h3 {
