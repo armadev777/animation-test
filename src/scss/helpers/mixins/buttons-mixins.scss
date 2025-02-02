@@ -20,26 +20,30 @@
 }
 
 //color mixins:
-@mixin btn_style_blue {
-	font-weight: 700;
-	color: $white;
-	background-color: $color_link_base;
-	transition: background-color 0.3s ease;
+@mixin btn_primary {
+	font-weight: 600;
+	color: $green;
+	background-color: $baige;
+	transition: background-color 0.3s ease, color ease 0.3s, border-color ease 0.3s;
+	text-transform: uppercase;
+	border: 1px solid $green;
 
 	@include st_btn;
 
 	&:hover {
-		background-color: darken($color_link_base, 10%);
+		background-color: $green;
+		color: $baige;
+		border-color: $baige;
 	}
 }
 
 //size mixins:
 @mixin btn_size_normal {
-	height: 4rem;
-	padding: 0 1.2rem;
+	height: 6.8rem;
+	padding: 0 2rem;
 
-	line-height: 4rem;
-	font-size: 1.6rem;
+	line-height: 6.8rem;
+	font-size: 2rem;
 
-	border-radius: $gl_radius;
+	border-radius: 5rem;
 }
